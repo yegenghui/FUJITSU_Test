@@ -1,4 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" mva:VisualBasic.Settings="{x:Null}"
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Main_1"
  xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
  xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
@@ -57,12 +57,10 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="シーケンス">
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="メッセージボックス" Text="[&quot;This is a test for Git&quot;]" TopMost="True" sap2010:WorkflowViewState.IdRef="MessageBox_1" />
-    <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
-    <sads:DebugSymbol.Symbol>d0FDOlxVc2Vyc1x5ZS5nZW5naHVpXERlc2t0b3BcbWVlY2FwX2NvbXBhcmVUZXN0XEdpdF9UZXN0XE1haW4ueGFtbAM8A0AOAgEBPQU90AECAQI9aT2PAQIBAw==</sads:DebugSymbol.Symbol>
+  <Sequence DisplayName="シーケンス" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="メッセージボックス" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;This is a test for Git change yeyyeyey&quot;]" TopMost="True" />
+    <sads:DebugSymbol.Symbol>dz1DOlxjdXRvbWVyXEVMS1xHaXRfTWFuYWdlbWVudFxGVUpJVFNVX1Rlc3RcR2l0X1Rlc3RcTWFpbi54YW1sAzwDPw4CAQE9BT3gAQIBAj2YAT3OAQIBAw==</sads:DebugSymbol.Symbol>
   </Sequence>
-  <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="MessageBox_1" sap:VirtualizedContainerService.HintSize="314,58.6666666666667" />
@@ -73,7 +71,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="376,262.666666666667" />
+      <sap2010:ViewStateData Id="Main_1" sap:VirtualizedContainerService.HintSize="376,302.666666666667" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
